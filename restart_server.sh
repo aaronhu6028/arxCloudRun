@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd $HOME/arxCloudRun
 pkill -SIGINT dotnet
 git pull
