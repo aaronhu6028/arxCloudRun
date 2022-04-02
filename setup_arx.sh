@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # set timezone
 sudo timedatectl set-timezone Asia/Taipei
@@ -22,4 +22,6 @@ printf '#!/bin/sh -e
 exit 0' $sname | sudo tee /etc/rc.local > /dev/null
 sudo chmod a+x /etc/rc.local
 
-echo "SETUP is done. Please restart the server."
+echo "----------------------------------------------"
+echo "  SETUP is done. Please restart the server."
+echo "----------------------------------------------"
