@@ -16,7 +16,7 @@ sudo apt-get update; \
   
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip 
-unzip arx-server.zip
+unzip -o arx-server.zip
   
 # create rc.local
 printf 'sudo -H -u aaronhu6028 /home/aaronhu6028/rc_local.sh start' | sudo tee /etc/rc.local > /dev/null
