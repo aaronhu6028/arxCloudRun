@@ -15,15 +15,12 @@ sudo apt-get update; \
   sudo apt-get install -y dotnet-runtime-6.0
   
 # unzip arx-server.zip
+unzip -v || sudo apt install -y unzip 
 unzip arx-server.zip
   
 # create rc.local
-sname=${HOSTNAME#*-}
-sname=${sname^^}
-printf '#!/bin/sh -e
-(cd /home/aaronhu6028/arxCloudRun && git pull)
-(cd /home/aaronhu6028/arxCloudRun && nohup dotnet arxServer.dll %s >> nohup.$(date --iso).out &)
-exit 0' $sname | sudo tee /etc/rc.local > /dev/null
+printf 'sudo -H -u aaronhu6028 /home/aaronhu6028/rc_local.sh start' | sudo tee /etc/rc.local > /dev/null
+
 sudo chmod a+x /etc/rc.local
 
 echo "----------------------------------------------"
