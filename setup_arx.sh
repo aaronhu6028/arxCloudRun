@@ -23,7 +23,7 @@ sname=${HOSTNAME#*-}
 sname=${sname^^}
 printf '#!/bin/sh -e
 sudo -H -u aaronhu6028 bash -c "(cd /home/aaronhu6028/arxCloudRun && git pull)"
-(cd /home/aaronhu6028/arxCloudRun && nohup dotnet arxServer.dll %s >> nohup.$(date --iso).out &)
+(cd /home/aaronhu6028/arxCloudRun && nohup dotnet arxServer.dll %s >> nohup.$(date +%Y-%M-%d-%H%m).out &)
 exit 0' $sname | sudo tee /etc/rc.local > /dev/null
 
 sudo chmod a+x /etc/rc.local
