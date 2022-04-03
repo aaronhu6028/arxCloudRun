@@ -16,12 +16,16 @@ sudo apt-get update; \
   
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip 
-unzip -o arx-server.zip
+unzip arx-server.zip
   
 # create rc.local
-printf 'sudo -H -u aaronhu6028 /home/aaronhu6028/arxCloudRun/rc_local.sh start' | sudo tee /etc/rc.local > /dev/null
+sname=${HOSTNAME#*-}
+sname=${sname^^}
+printf '#!/bin/sh -e
+sudo -H -u aaronhu6028 bash -c "(cd /home/aaronhu6028/arxCloudRun && git pull)"
+(cd /home/aaronhu6028/arxCloudRun && nohup dotnet arxServer.dll %s >> nohup.$(date --iso).out &)
+exit 0' $sname | sudo tee /etc/rc.local > /dev/null
 
-chmod a+x rc_local.sh
 sudo chmod a+x /etc/rc.local
 
 echo "----------------------------------------------"
