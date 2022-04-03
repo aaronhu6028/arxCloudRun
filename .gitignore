@@ -1,3 +1,5 @@
 *.pdb
 /Log
 /Quotes
+arx-server.json
+
