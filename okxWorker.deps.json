@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "okxWorker/1.0.0": {
         "dependencies": {
-          "Binance.API.Csharp.Client": "1.0.0",
           "CryptoExchange.Net": "4.2.8",
           "DeviceId": "6.0.0",
           "Google.Cloud.Firestore": "2.4.0",
@@ -374,36 +373,6 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
-      },
-      "Binance.API.Csharp.Client/1.0.0": {
-        "dependencies": {
-          "Binance.API.Csharp.Client.Domain": "1.0.0",
-          "Binance.API.Csharp.Client.Models": "1.0.0"
-        },
-        "runtime": {
-          "Binance.API.Csharp.Client.dll": {}
-        }
-      },
-      "Binance.API.Csharp.Client.Domain/1.0.0": {
-        "dependencies": {
-          "Binance.API.Csharp.Client.Models": "1.0.0"
-        },
-        "runtime": {
-          "Binance.API.Csharp.Client.Domain.dll": {}
-        }
-      },
-      "Binance.API.Csharp.Client.Models/1.0.0": {
-        "runtime": {
-          "Binance.API.Csharp.Client.Models.dll": {}
-        }
-      },
-      "websocket-sharp/1.0.2.32519": {
-        "runtime": {
-          "websocket-sharp.dll": {
-            "assemblyVersion": "1.0.2.32519",
-            "fileVersion": "1.0.2.32519"
-          }
-        }
       }
     }
   },
@@ -643,26 +612,6 @@
       "sha512": "sha512-U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
       "path": "system.security.principal.windows/4.5.0",
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
-    },
-    "Binance.API.Csharp.Client/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Binance.API.Csharp.Client.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Binance.API.Csharp.Client.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "websocket-sharp/1.0.2.32519": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
