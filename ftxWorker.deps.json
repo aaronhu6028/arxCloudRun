@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ftxWorker/1.0.0": {
         "dependencies": {
+          "Binance.API.Csharp.Client": "1.0.0",
           "DeviceId": "6.0.0",
           "FtxApi": "1.0.0",
           "Google.Cloud.Firestore": "2.4.0",
@@ -342,6 +343,28 @@
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
       },
+      "Binance.API.Csharp.Client/1.0.0": {
+        "dependencies": {
+          "Binance.API.Csharp.Client.Domain": "1.0.0",
+          "Binance.API.Csharp.Client.Models": "1.0.0"
+        },
+        "runtime": {
+          "Binance.API.Csharp.Client.dll": {}
+        }
+      },
+      "Binance.API.Csharp.Client.Domain/1.0.0": {
+        "dependencies": {
+          "Binance.API.Csharp.Client.Models": "1.0.0"
+        },
+        "runtime": {
+          "Binance.API.Csharp.Client.Domain.dll": {}
+        }
+      },
+      "Binance.API.Csharp.Client.Models/1.0.0": {
+        "runtime": {
+          "Binance.API.Csharp.Client.Models.dll": {}
+        }
+      },
       "FtxApi/1.0.0": {
         "runtime": {
           "FtxApi.dll": {}
@@ -360,6 +383,14 @@
           "SuperSocket.ClientEngine.dll": {
             "assemblyVersion": "0.10.0.0",
             "fileVersion": "0.10.0.0"
+          }
+        }
+      },
+      "websocket-sharp/1.0.2.32519": {
+        "runtime": {
+          "websocket-sharp.dll": {
+            "assemblyVersion": "1.0.2.32519",
+            "fileVersion": "1.0.2.32519"
           }
         }
       }
@@ -581,6 +612,21 @@
       "path": "system.security.principal.windows/4.5.0",
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
     },
+    "Binance.API.Csharp.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Binance.API.Csharp.Client.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Binance.API.Csharp.Client.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "FtxApi/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -592,6 +638,11 @@
       "sha512": ""
     },
     "SuperSocket.ClientEngine/0.10.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "websocket-sharp/1.0.2.32519": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
