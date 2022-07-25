@@ -22,7 +22,7 @@ unzip -o arx-server.zip
 sname=${HOSTNAME#*-}
 sname=${sname^^}
 echo "#!/bin/sh
-sudo -H -u aaronhu6028 bash /home/aaronhu6028/arxCloudRun/rc_local.sh" | sudo tee /etc/rc.local > /dev/null
+sudo -H -u ${LOGNAME} bash ${HOME}/arxCloudRun/rc_local.sh" | sudo tee /etc/rc.local > /dev/null
 
 sudo chmod a+x /etc/rc.local
 
