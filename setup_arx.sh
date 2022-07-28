@@ -17,7 +17,20 @@ sudo apt-get update; \
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip 
 unzip -o arx-server.zip
-  
+
+# swap
+SWAP=/swap
+if [ -f "$SWAP" ]; then
+  echo "$SWAP existed."
+else
+  echo create swap file
+  sudo fallocate -l 4G "$SWAP"
+  sudo chmod 600 "$SWAP"
+  sudo mkswap "$SWAP"
+  sudo swapon "$SWAP"
+  echo "$SWAP none swap sw 0 0" | sudo tee -a /etc/fstab
+fi
+
 # create rc.local
 sname=${HOSTNAME#*-}
 sname=${sname^^}
