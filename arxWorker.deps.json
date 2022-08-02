@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "arxWorker/1.0.0": {
         "dependencies": {
-          "Binance.API.Csharp.Client": "1.0.0",
+          "Binance.Net": "8.1.7",
           "DeviceId": "6.0.0",
           "Google.Cloud.Firestore": "2.4.0",
           "Google.Cloud.PubSub.V1": "2.7.0",
@@ -17,6 +17,30 @@
         },
         "runtime": {
           "arxWorker.dll": {}
+        }
+      },
+      "Binance.Net/8.1.7": {
+        "dependencies": {
+          "CryptoExchange.Net": "5.2.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Binance.Net.dll": {
+            "assemblyVersion": "8.1.7.0",
+            "fileVersion": "8.1.7.0"
+          }
+        }
+      },
+      "CryptoExchange.Net/5.2.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/CryptoExchange.Net.dll": {
+            "assemblyVersion": "5.2.2.0",
+            "fileVersion": "5.2.2.0"
+          }
         }
       },
       "DeviceId/6.0.0": {
@@ -272,6 +296,22 @@
           }
         }
       },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/2.0.0": {},
       "Newtonsoft.Json/13.0.1": {
         "runtime": {
@@ -341,36 +381,6 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
-      },
-      "Binance.API.Csharp.Client/1.0.0": {
-        "dependencies": {
-          "Binance.API.Csharp.Client.Domain": "1.0.0",
-          "Binance.API.Csharp.Client.Models": "1.0.0"
-        },
-        "runtime": {
-          "Binance.API.Csharp.Client.dll": {}
-        }
-      },
-      "Binance.API.Csharp.Client.Domain/1.0.0": {
-        "dependencies": {
-          "Binance.API.Csharp.Client.Models": "1.0.0"
-        },
-        "runtime": {
-          "Binance.API.Csharp.Client.Domain.dll": {}
-        }
-      },
-      "Binance.API.Csharp.Client.Models/1.0.0": {
-        "runtime": {
-          "Binance.API.Csharp.Client.Models.dll": {}
-        }
-      },
-      "websocket-sharp/1.0.2.32519": {
-        "runtime": {
-          "websocket-sharp.dll": {
-            "assemblyVersion": "1.0.2.32519",
-            "fileVersion": "1.0.2.32519"
-          }
-        }
       }
     }
   },
@@ -379,6 +389,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Binance.Net/8.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l1IZgIK+K3PNFa3Qy9X+zr2a1OjvaH253Vd+EJaphNrbCdq+FDwFJh/Py/val546L98yLSldkA1HnPdzaaD/HA==",
+      "path": "binance.net/8.1.7",
+      "hashPath": "binance.net.8.1.7.nupkg.sha512"
+    },
+    "CryptoExchange.Net/5.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X7s1a75oLoQxgjt3vYCydvwwv5G9MIwq2FTtS/+eFfGZArjBul6t56wEtIBAnS+QIh0bsXSoZ7MGVYWHQq/0dw==",
+      "path": "cryptoexchange.net/5.2.2",
+      "hashPath": "cryptoexchange.net.5.2.2.nupkg.sha512"
     },
     "DeviceId/6.0.0": {
       "type": "package",
@@ -513,6 +537,20 @@
       "path": "microsoft.bcl.asyncinterfaces/1.0.0",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-44rDtOf1JXXAFpNT2EXMExaDm/4OJ2RXOL9i9lE4bK427nzC7Exphv+beB6IgluyE2GIoo8zezTStMXI7MQ8WA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jjo4YXRx6MIpv6DiRxJjSpl+sPP0+5VW0clMEdLyIAz44PPwrDTFrd5PZckIxIXl1kKZ2KK6IL2nkt0+ug2MQg==",
+      "path": "microsoft.extensions.logging.abstractions/3.1.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -589,26 +627,6 @@
       "sha512": "sha512-U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
       "path": "system.security.principal.windows/4.5.0",
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
-    },
-    "Binance.API.Csharp.Client/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Binance.API.Csharp.Client.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Binance.API.Csharp.Client.Models/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "websocket-sharp/1.0.2.32519": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
