@@ -8,27 +8,28 @@
     ".NETCoreApp,Version=v6.0": {
       "okxWorker/1.0.0": {
         "dependencies": {
-          "CryptoExchange.Net": "4.2.8",
+          "CryptoExchange.Net": "5.2.4",
           "DeviceId": "6.0.0",
           "Google.Cloud.Firestore": "2.4.0",
           "Google.Cloud.PubSub.V1": "2.7.0",
           "Newtonsoft.Json": "13.0.1",
-          "OKEx.Net": "5.2.0",
+          "OKEx.Net": "5.2.5",
           "log4net": "2.0.14"
         },
         "runtime": {
           "okxWorker.dll": {}
         }
       },
-      "CryptoExchange.Net/4.2.8": {
+      "CryptoExchange.Net/5.2.4": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
           "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/netstandard2.1/CryptoExchange.Net.dll": {
-            "assemblyVersion": "4.2.8.0",
-            "fileVersion": "4.2.8.0"
+            "assemblyVersion": "5.2.4.0",
+            "fileVersion": "5.2.4.0"
           }
         }
       },
@@ -285,6 +286,14 @@
           }
         }
       },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -302,14 +311,14 @@
           }
         }
       },
-      "OKEx.Net/5.2.0": {
+      "OKEx.Net/5.2.5": {
         "dependencies": {
-          "CryptoExchange.Net": "4.2.8"
+          "CryptoExchange.Net": "5.2.4"
         },
         "runtime": {
           "lib/netstandard2.1/Okex.Net.dll": {
-            "assemblyVersion": "5.2.0.0",
-            "fileVersion": "5.2.0.0"
+            "assemblyVersion": "5.2.5.0",
+            "fileVersion": "5.2.5.0"
           }
         }
       },
@@ -382,12 +391,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CryptoExchange.Net/4.2.8": {
+    "CryptoExchange.Net/5.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CtblMHQwmZXEPJyrmjC2ZtNd5yr9+Gy3WWLSKprBbcU0qyZtbEQgaYMIWtI2CB4r4XMfu7z2/DvPdJKJcBmiJA==",
-      "path": "cryptoexchange.net/4.2.8",
-      "hashPath": "cryptoexchange.net.4.2.8.nupkg.sha512"
+      "sha512": "sha512-MkIU47TEiqNHorxKcjS6FjXa1iM8RfI4tCtZaCldIYizhtxMrYh6H3N36mv8lcOxLjlPf1uuaNUHzjwQbVUkQQ==",
+      "path": "cryptoexchange.net/5.2.4",
+      "hashPath": "cryptoexchange.net.5.2.4.nupkg.sha512"
     },
     "DeviceId/6.0.0": {
       "type": "package",
@@ -522,6 +531,13 @@
       "path": "microsoft.bcl.asyncinterfaces/1.0.0",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-44rDtOf1JXXAFpNT2EXMExaDm/4OJ2RXOL9i9lE4bK427nzC7Exphv+beB6IgluyE2GIoo8zezTStMXI7MQ8WA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
       "type": "package",
       "serviceable": true,
@@ -543,12 +559,12 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
-    "OKEx.Net/5.2.0": {
+    "OKEx.Net/5.2.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JwEQqPaaDXamLptElrCWH0pwxw4x2gbKqc8VoU/RrzCQ8VWlFU5uLqL5o05Q7XkFkmlzCbbB+UEitPo1P20BIA==",
-      "path": "okex.net/5.2.0",
-      "hashPath": "okex.net.5.2.0.nupkg.sha512"
+      "sha512": "sha512-XZ1L2OtVNAZ2RE2WCuzkIt0LbzWuiJi/GK6zN8De37Zq657nI3ztxHNUhGXj0KNvxZ1zDIeuvS2lCOghhM/j5A==",
+      "path": "okex.net/5.2.5",
+      "hashPath": "okex.net.5.2.5.nupkg.sha512"
     },
     "System.Collections.Immutable/1.4.0": {
       "type": "package",
