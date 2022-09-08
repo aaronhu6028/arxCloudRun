@@ -9,6 +9,7 @@
       "ftxWorker/1.0.0": {
         "dependencies": {
           "Binance.Net": "8.1.7",
+          "CryptoExchange.Net": "5.2.4",
           "DeviceId": "6.0.0",
           "FtxApi": "1.0.0",
           "Google.Cloud.Firestore": "2.4.0",
@@ -22,7 +23,7 @@
       },
       "Binance.Net/8.1.7": {
         "dependencies": {
-          "CryptoExchange.Net": "5.2.2"
+          "CryptoExchange.Net": "5.2.4"
         },
         "runtime": {
           "lib/netstandard2.1/Binance.Net.dll": {
@@ -31,7 +32,7 @@
           }
         }
       },
-      "CryptoExchange.Net/5.2.2": {
+      "CryptoExchange.Net/5.2.4": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
           "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
@@ -39,8 +40,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/CryptoExchange.Net.dll": {
-            "assemblyVersion": "5.2.2.0",
-            "fileVersion": "5.2.2.0"
+            "assemblyVersion": "5.2.4.0",
+            "fileVersion": "5.2.4.0"
           }
         }
       },
@@ -419,12 +420,12 @@
       "path": "binance.net/8.1.7",
       "hashPath": "binance.net.8.1.7.nupkg.sha512"
     },
-    "CryptoExchange.Net/5.2.2": {
+    "CryptoExchange.Net/5.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-X7s1a75oLoQxgjt3vYCydvwwv5G9MIwq2FTtS/+eFfGZArjBul6t56wEtIBAnS+QIh0bsXSoZ7MGVYWHQq/0dw==",
-      "path": "cryptoexchange.net/5.2.2",
-      "hashPath": "cryptoexchange.net.5.2.2.nupkg.sha512"
+      "sha512": "sha512-MkIU47TEiqNHorxKcjS6FjXa1iM8RfI4tCtZaCldIYizhtxMrYh6H3N36mv8lcOxLjlPf1uuaNUHzjwQbVUkQQ==",
+      "path": "cryptoexchange.net/5.2.4",
+      "hashPath": "cryptoexchange.net.5.2.4.nupkg.sha512"
     },
     "DeviceId/6.0.0": {
       "type": "package",
