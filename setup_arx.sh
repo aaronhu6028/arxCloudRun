@@ -13,7 +13,11 @@ sudo apt-get update; \
   sudo apt-get install -y apt-transport-https && \
   sudo apt-get update && \
   sudo apt-get install -y dotnet-runtime-6.0
-  
+
+# install python3 modules
+sudo apt-get install -y python3-pip && \
+    pip3 install websockets asyncio
+
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip 
 unzip -o arx-server.zip
@@ -38,6 +42,8 @@ echo "#!/bin/sh
 sudo -H -u ${LOGNAME} bash ${HOME}/arxCloudRun/rc_local.sh" | sudo tee /etc/rc.local > /dev/null
 
 sudo chmod a+x /etc/rc.local
+
+mkdir Log
 
 echo "----------------------------------------------"
 echo "  SETUP is done. Please restart the server."
