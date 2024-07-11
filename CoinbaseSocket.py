@@ -49,7 +49,7 @@ async def coinbase_ws_handler():
                         ts = t[:16]
                         if ts != last_ts:
                             last_ts = ts
-                            logit(f"ticker: product_id={data.get('product_id')} time={data.get('time')} price={data.get('price')}")
+                            logit(f"ticker: n={len(connected_clients)} product_id={data.get('product_id')} time={data.get('time')} price={data.get('price')}")
                     else:
                         logit(f"{data.get('type')}: {data}")
 
