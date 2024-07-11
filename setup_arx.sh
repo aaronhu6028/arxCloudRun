@@ -16,7 +16,7 @@ sudo apt-get update; \
 
 # install python3 modules
 sudo apt-get install -y python3-pip && \
-    pip3 install websockets
+    pip3 install websockets asyncio
 
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip 
