@@ -15,6 +15,7 @@ sudo apt-get update; \
   sudo apt-get install -y dotnet-runtime-6.0
 
 # install python3 modules
+sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
 sudo apt-get install -y python3-pip && \
     pip3 install websockets asyncio
 
