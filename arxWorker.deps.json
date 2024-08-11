@@ -21,17 +21,6 @@
           "arxWorker.dll": {}
         }
       },
-      "Binance.Net/8.1.7": {
-        "dependencies": {
-          "CryptoExchange.Net": "5.2.4"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Binance.Net.dll": {
-            "assemblyVersion": "8.1.7.0",
-            "fileVersion": "8.1.7.0"
-          }
-        }
-      },
       "Coinbase.Pro/4.2.2": {
         "dependencies": {
           "Flurl": "3.0.1",
@@ -939,6 +928,14 @@
             "fileVersion": "0.15.2.11"
           }
         }
+      },
+      "Binance.Net/8.1.7": {
+        "dependencies": {
+          "CryptoExchange.Net": "5.2.4"
+        },
+        "runtime": {
+          "Binance.Net.dll": {}
+        }
       }
     }
   },
@@ -947,13 +944,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Binance.Net/8.1.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-l1IZgIK+K3PNFa3Qy9X+zr2a1OjvaH253Vd+EJaphNrbCdq+FDwFJh/Py/val546L98yLSldkA1HnPdzaaD/HA==",
-      "path": "binance.net/8.1.7",
-      "hashPath": "binance.net.8.1.7.nupkg.sha512"
     },
     "Coinbase.Pro/4.2.2": {
       "type": "package",
@@ -1633,6 +1623,11 @@
       "sha512": "sha512-xu6NiIDP6BEwO8cgXLUdWI8teB/TxVjzMjMYE7hcP93+MpZdxzDzz1cTFxU4OWVP0NESchcQO5LkiJ/wgB03AQ==",
       "path": "websocket4net/0.15.2",
       "hashPath": "websocket4net.0.15.2.nupkg.sha512"
+    },
+    "Binance.Net/8.1.7": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
