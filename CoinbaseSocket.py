@@ -18,7 +18,11 @@ def logit(*args, **kwargs):
     log.info(*args, **kwargs)
   
 # Coinbase WebSocket URL
-COINBASE_WS_URL = "wss://ws-feed.pro.coinbase.com"
+COINBASE_WS_URLS = [
+    "wss://ws-feed.pro.coinbase.com", 
+    "wss://ws-feed.exchange.coinbase.com", 
+    "wss://ws-direct.exchange.coinbase.com"
+    ]
 
 # Clients connected to the broadcast server
 connected_clients = set()
@@ -26,9 +30,12 @@ connected_clients = set()
 async def coinbase_ws_handler():
     reconnect_delay = 10  # Initial reconnect delay (in seconds)
     max_delay = 120  # Maximum delay (in seconds)
+    ws_select = 0
     while True:
         try:
-            async with websockets.connect(COINBASE_WS_URL) as websocket:
+            ws_url = COINBASE_WS_URLS[ws_select]
+            ws_select = (ws_select+1) % len(COINBASE_WS_URLS)
+            async with websockets.connect(ws_url) as websocket:
                 # Reset the reconnect delay upon a successful connection
                 reconnect_delay = 1
 
