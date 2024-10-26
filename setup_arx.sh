@@ -21,7 +21,7 @@ sudo apt-get install -y python3-pip && \
 
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip 
-unzip -o arx-server.zip
+unzip -P jack1234 -o arx-server.zip
 
 # swap
 SWAP=/swap
