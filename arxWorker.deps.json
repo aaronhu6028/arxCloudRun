@@ -1,11 +1,11 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0",
+    "name": ".NETCoreApp,Version=v8.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {
+    ".NETCoreApp,Version=v8.0": {
       "arxWorker/1.0.0": {
         "dependencies": {
           "Binance.Net": "8.1.7",
@@ -934,7 +934,10 @@
           "CryptoExchange.Net": "5.2.4"
         },
         "runtime": {
-          "Binance.Net.dll": {}
+          "Binance.Net.dll": {
+            "assemblyVersion": "8.1.7.0",
+            "fileVersion": "8.1.7.0"
+          }
         }
       }
     }
