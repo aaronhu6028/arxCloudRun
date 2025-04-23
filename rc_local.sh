@@ -1,5 +1,7 @@
 #!/bin/bash -e
-sname=${HOSTNAME#*-}
+sname=$HOSTNAME
+sname=${sname%%.*}
+sname=${sname#*-}
 sname=${sname^^}
 (cd ${HOME}/arxCloudRun && git pull)
 (cd ${HOME}/arxCloudRun && python3 CoinbaseSocket.py &)
