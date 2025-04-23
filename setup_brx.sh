@@ -16,8 +16,7 @@ sudo apt-get update; \
 
 # install python3 modules
 sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
-sudo apt-get install -y python3-pip && \
-    pip3 install websockets asyncio
+sudo apt-get install python3-websockets
 
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip
@@ -38,8 +37,6 @@ else
 fi
 
 # create rc.local
-sname=${HOSTNAME#*-}
-sname=${sname^^}
 echo "#!/bin/sh
 sudo -H -u ${LOGNAME} bash ${HOME}/arxCloudRun/rc_local.sh" | sudo tee /etc/rc.local > /dev/null
 
