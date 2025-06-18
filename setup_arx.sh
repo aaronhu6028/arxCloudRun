@@ -20,8 +20,8 @@ sudo apt-get install python3-websockets
 
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip
-unzip -P jack1234 -o brx-server.zip
-cp -f arx-server.json arx-server.json
+unzip -P jack1234 -o arx-server.zip
+# cp -f arx-server.json arx-server.json
 
 # swap
 SWAP=/swap
