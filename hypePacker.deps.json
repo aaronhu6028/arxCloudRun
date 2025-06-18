@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "arxPacker/1.0.0": {
+      "hypePacker/1.0.0": {
         "dependencies": {
           "Binance.Net": "11.1.0",
           "Coinbase.Pro": "4.2.2",
@@ -19,7 +19,7 @@
           "log4net": "2.0.14"
         },
         "runtime": {
-          "arxPacker.dll": {}
+          "hypePacker.dll": {}
         }
       },
       "Binance.Net/11.1.0": {
@@ -1139,7 +1139,7 @@
     }
   },
   "libraries": {
-    "arxPacker/1.0.0": {
+    "hypePacker/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

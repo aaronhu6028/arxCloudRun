@@ -76,7 +76,7 @@ async def broadcast(data):
         tasks = [client.send(message) for client in connected_clients]
         await asyncio.gather(*tasks)
 
-async def client_handler(websocket, path):
+async def client_handler(websocket, path=None):
     addr = websocket.remote_address
     connected_clients.add(websocket)
     logit(f"Client connected from {addr}")
