@@ -42,21 +42,22 @@ async def coinbase_ws_handler():
                 # Subscribe to the BTC-USD ticker channel
                 subscribe_message = json.dumps({
                     "type": "subscribe",
-                    "channels": [{"name": "ticker", "product_ids": ["BTC-USD"]}]
+                    "channels": [{"name": "ticker", "product_ids": ["BTC-USD", "ETH-USD"]}]
                 })
                 await websocket.send(subscribe_message)
 
-                last_ts = ''
+                last_ts = {}
                 while True:
                     message = await websocket.recv()
                     data = json.loads(message)
                     if data.get('type') == 'ticker':
                         await broadcast(data)
                         t = data.get('time')
+                        product = data.get('product_id')
                         ts = t[:16]
-                        if ts != last_ts:
-                            last_ts = ts
-                            logit(f"ticker: n={len(connected_clients)} product_id={data.get('product_id')} time={data.get('time')} price={data.get('price')}")
+                        if ts != last_ts.get(product):
+                            last_ts[product] = ts
+                            logit(f"ticker: n={len(connected_clients)} product_id={product} time={data.get('time')} price={data.get('price')}")
                     else:
                         logit(f"{data.get('type')}: {data}")
 
