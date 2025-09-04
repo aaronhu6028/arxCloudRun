@@ -16,7 +16,7 @@ sudo apt-get update; \
 
 # install python3 modules
 sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
-sudo apt-get install python3-websockets python3-pip
+sudo apt-get install -y python3-websockets python3-pip
 
 # install pip requirements
 pip3 install -r requirements.txt
