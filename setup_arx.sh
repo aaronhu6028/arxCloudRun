@@ -36,6 +36,9 @@ else
   echo "$SWAP none swap sw 0 0" | sudo tee -a /etc/fstab
 fi
 
+# install pip requirements
+pip3 install -r requirements.txt
+
 # create rc.local
 echo "#!/bin/sh
 sudo -H -u ${LOGNAME} bash ${HOME}/arxCloudRun/rc_local.sh" | sudo tee /etc/rc.local > /dev/null
