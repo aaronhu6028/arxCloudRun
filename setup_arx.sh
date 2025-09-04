@@ -16,7 +16,10 @@ sudo apt-get update; \
 
 # install python3 modules
 sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
-sudo apt-get install python3-websockets
+sudo apt-get install python3-websockets python3-pip
+
+# install pip requirements
+pip3 install -r requirements.txt
 
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip
@@ -35,9 +38,6 @@ else
   sudo swapon "$SWAP"
   echo "$SWAP none swap sw 0 0" | sudo tee -a /etc/fstab
 fi
-
-# install pip requirements
-pip3 install -r requirements.txt
 
 # create rc.local
 echo "#!/bin/sh
