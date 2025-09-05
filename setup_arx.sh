@@ -19,7 +19,7 @@ sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/nee
 sudo apt-get install -y python3-websockets python3-pip
 
 # install pip requirements
-pip3 install -r requirements.txt
+pip3 install --break-system-packages -r requirements.txt
 
 # unzip arx-server.zip
 unzip -v || sudo apt install -y unzip
