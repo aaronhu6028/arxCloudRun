@@ -2,7 +2,10 @@
 /Log
 /Quotes
 arx-server.json
+brx-server.json
+arx-server.json.org
+brx-server.json.org
 nohup.*
-/brx-server.json
 /.vscode
 Kline
+
