@@ -25,7 +25,7 @@ except Exception:
 
 
 WS_ENDPOINTS = {
-    "futures": "wss://fstream.binance.com/ws/{stream}",
+    "futures": "wss://fstream.binance.com/market/ws/{stream}",
     "spot": "wss://stream.binance.com:9443/ws/{stream}",
 }
 
