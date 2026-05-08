@@ -9,3 +9,4 @@ nohup.*
 /.vscode
 Kline
 
+/__pycache__
